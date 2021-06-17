@@ -111,6 +111,21 @@ body {
         padding-bottom: 10px;
     }
 
+
+    .orange-click, .blue-click, .pink-click{
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+
+    .orange-off, .pink-off, .blue-off{
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        padding:0px;
+    }
+
     .products{
         max-width: 90%;
         width: 90%;
@@ -352,10 +367,27 @@ body {
         position: relative;
         z-index: 2;
         width: 50px;
+        cursor: pointer;
     }
 
     .orange{
         padding-bottom: 10px;
+    }
+
+    .orange-click, .blue-click, .pink-click{
+        position: relative;
+        z-index: 2;
+        width: 50px;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+
+    .orange-off, .pink-off, .blue-off{
+        position: relative;
+        z-index: 2;
+        width: 50px;
+        cursor: pointer;
+        padding:0px;
     }
 
     .products{
