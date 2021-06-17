@@ -8,91 +8,109 @@
     <link rel="shortcut icon" href="./Assets/Icons/ShortIcon.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
   </head>
 
   <body>
-
-    <header class="header-section">
-      <h1 class="logo">
-        <img src="./Assets/Logo/LogoHeader.svg" class="header-logo">
-      </h1>
-      <div class="search-icon-div">
-        <img src="./Assets/Icons/SearchIcon.svg" class="search-icon">
+    <header id="header" class="header-class">
+      <div class="logo">
+        <img class="header-logo" src="./Assets/Logo/LogoHeader.svg" />
       </div>
-      
+      <div class="animation-icons">
+        <div class="blue-icecream">
+          <div class="blue-base"></div>
+          <img id="blue-animation"
+            class="blue" src="./Assets/Icons/blueIceCream.svg"
+            onclick="blueFunction()"
+          />
+        </div>
+        <div class="pink-icecream">
+          <div class="pink-base"></div>
+          <img id="pink-animation" class="pink" src="./Assets/Icons/pinkIceCream.svg" onclick="pinkFunction()"/>
+        </div>
+        <div class="orange-icecream">
+          <div class="orange-base"></div>
+          <img id="orange-animation" class="orange" src="./Assets/Icons/orangeIceCream.svg" onclick="orangeFunction()">
+        </div>
+      </div>
+      <div class="barra-pesquisa">
+        <input id="input" class="pesquisa-texto" type="text" placeholder="Procure seu sorvete" onkeyup="input()"/>
+        <img class="icone-pesquisa" src="./Assets/Icons/SearchIcon.svg" onclick="pesquisar()"/>
+      </div>
     </header>
 
-    <main class="main-section">
+    <main>
+      <div class="externo">
+        <section class="products">
 
-      <div class="products">
-        
-        <div class="tablito">
-          <img src="./Assets/Products/Tablito.svg" width="80%"> 
-          
-            <text>Picolé Tablito</text>
-            <p>Picolé de chocolate tradicional e branco 106g (R$ 0,05/g)</p>
-            <text>R$ 5,00</text>
-          
-        </div>
-        
-        <div class="brigadeiro">
-          <img src="./Assets/Products/Brigadeiro.svg" width="80%">
-        </div>
-        
-        <div class="kolorix">
-          <img src="./Assets/Products/KolorixUva.svg" width="80%">
-        </div>
-        
-        <div class="chica-bon">
-          <img src="./Assets/Products/ChicaBon.svg" width="80%"> 
-          
-            <text>Chica Bon</text>
-            <p>Picolé de chocolate tradicional 106g (R$ 0,05/g)</p> 
-            <text>R$ 5,00</text>
-          
-        </div>    
-        
-        <div class="morango">
-          <img src="./Assets/Products/Morango.svg" width="80%">
-        </div>
-        
-        <div class="minions">
-          <img src="./Assets/Products/Minions.svg" width="80%">
-        </div>
+          <div class="grid-a">
+            <div class="product tablito">
+              <img src="./Assets/Products/Tablito.svg" class="tablito-img" />
+              <p class="texto-maior"> Picolé Tablito </p>
+              <p class="text-tablito"> Picolé de chocolate tradicional e branco 106g (R$ 0,05/g) </p>
+              <p class="texto-maior"> R$ 5,00 </p>
+            </div>
+            <div class="product brigadeiro">
+              <img src="./Assets/Products/Brigadeiro.svg" class="brigadeiro-img"/>
+            </div>
+            <div class="product kolorix">
+              <img src="./Assets/Products/KolorixUva.svg" class="kolorix-img"/>
+            </div>
+          </div>
 
+          <div class="grid-b"> 
+            <div class="product chicabon">
+              <img src="./Assets/Products/ChicaBon.svg" class="chicabon-img"/>
+              <p class="texto-maior"> Chica Bon </p>
+              <p class="text-chicabon"> Picolé de chocolate tradicional 106g (R$ 0,05/g) </p>
+              <p class="text-maior"> R$ 5,00 </p>
+            </div>
+            <div class="product morango">
+              <img src="./Assets/Products/Morango.svg" class="morango-img"/>
+            </div>
+            <div class="product minion">
+              <img src="./Assets/Products/Minions.svg" class="minion-img"/>
+            </div>
+          </div>
+
+        </section>
       </div>
-
     </main>
 
-    <footer class="footer-section">
-      
-      <div class="footer-configure">
-        <h1>
-          <img src="./Assets/Logo/LogoComponent.svg" class="footer-logo">
-        </h1>
-      <div class="text">
-        <text>
-          Made with &lt;/&gt; and &lt;3 by Juliana
-        </text>
-      </div>
-        
-        <ul class="contato">
-          <li class="contato-items"> 
-            <img src="./Assets/Icons/cellphoneIcon.svg" class="contact-icons"> 
-            <text class="contact-text">81 3511-1259</text>
-          </li>
-          <li class="contato-items"> 
-            <img src="./Assets/Icons/emailIcon.svg" class="contact-icons"> 
-            <text class="contact-text">doubledip@org.com</text>
-          </li>
-          <li class="contato-items"> 
-            <img src="./Assets/Icons/InstagramIcon.svg" class="contact-icons"> 
-            <text class="contact-text">@doubledip.store</text>
-          </li>
-        </ul>  
-      </div>
-      
+    <footer>
+
+      <section id="footer" class="footer-section">
+
+          <div class="footer-logo">
+            <img src="./Assets/Logo/LogoComponent.svg" class="logo-img"/>
+          </div>
+
+          <div class="made-by">
+            <p>Made with &lt;/&gt; and &lt;3 by Juliana Serafim</p>
+          </div>
+
+          <div class="contato-section">
+            <ul class="contato">
+              <li class="contato-items"> 
+                <img src="./Assets/Icons/cellphoneIcon.svg" class="contact-icons"> 
+                <text class="contact-text">81 3511-1259</text>
+              </li>
+              <li class="contato-items"> 
+                <img src="./Assets/Icons/emailIcon.svg" class="contact-icons"> 
+                <text class="contact-text">doubledip@org.com</text>
+              </li>
+              <li class="contato-items"> 
+                <img src="./Assets/Icons/InstagramIcon.svg" class="contact-icons"> 
+                <text class="contact-text">@doubledip.store</text>
+              </li>
+            </ul>
+         </div>  
+
+      </section>
+
     </footer>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
