@@ -11,7 +11,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 @media screen and (min-width: 980px){
+
+    .externo{
+        position: relative;
+        min-height: 80%;
+        height: 400px;
+    }
     
     .header-class{
         width: 100vw;
@@ -254,6 +261,12 @@ body {
 }
 
 @media screen and (max-width: 980px){
+
+    .externo{
+        position: relative;
+        min-height: 80%;
+        height: 500px;
+    }
 
     .header-class{
         width: 100vw;
