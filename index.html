@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="barra-pesquisa">
-        <input class="pesquisa-texto" type="text" placeholder="Procure seu sorvete"/>
+        <input id="input" class="pesquisa-texto" type="text" placeholder="Procure seu sorvete" onkeyup="input()"/>
         <img class="icone-pesquisa" src="./Assets/Icons/SearchIcon.svg" onclick="pesquisar()"/>
       </div>
     </header>
@@ -44,31 +44,31 @@
       <section class="products">
 
         <div class="grid-a">
-          <div class="tablito">
+          <div class="product tablito">
             <img src="./Assets/Products/Tablito.svg" class="tablito-img" />
             <p class="texto-maior"> Picolé Tablito </p>
             <p class="text-tablito"> Picolé de chocolate tradicional e branco 106g (R$ 0,05/g) </p>
             <p class="texto-maior"> R$ 5,00 </p>
           </div>
-          <div class="brigadeiro">
+          <div class="product brigadeiro">
             <img src="./Assets/Products/Brigadeiro.svg" class="brigadeiro-img"/>
           </div>
-          <div class="kolorix">
+          <div class="product kolorix">
             <img src="./Assets/Products/KolorixUva.svg" class="kolorix-img"/>
           </div>
         </div>
 
         <div class="grid-b"> 
-          <div class="chicabon">
+          <div class="product chicabon">
             <img src="./Assets/Products/ChicaBon.svg" class="chicabon-img"/>
             <p class="texto-maior"> Chica Bon </p>
             <p class="text-chicabon"> Picolé de chocolate tradicional 106g (R$ 0,05/g) </p>
             <p class="text-maior"> R$ 5,00 </p>
           </div>
-          <div class="morango">
+          <div class="product morango">
             <img src="./Assets/Products/Morango.svg" class="morango-img"/>
           </div>
-          <div class="minion">
+          <div class="product minion">
             <img src="./Assets/Products/Minions.svg" class="minion-img"/>
           </div>
         </div>

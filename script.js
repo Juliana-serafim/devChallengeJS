@@ -53,3 +53,21 @@ function pesquisar(){
     pesquisa.classList.toggle('barra-pesquisa-web');
     textopesquisa.classList.toggle('pesquisa-texto-web');
 }
+
+function input(){
+    const products = document.querySelectorAll(".product");
+    const inputForm = document.getElementById('input');
+    inputForm.addEventListener("keyup", (event) => {
+        const nome = event.target.value.toLowerCase();
+        const productsList = Array.from(products);
+        for (let i = 0; i < productsList.length; i++) {
+            if (!productsList[i].className.includes(nome)) {
+                productsList[i].style.cssText = "display: none;"
+            } else {
+                productsList[i].style.cssText = "display: auto;"
+            }
+        }
+    })
+    console.log(products);
+}
+
