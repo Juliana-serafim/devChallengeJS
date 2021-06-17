@@ -1,57 +1,179 @@
-@media screen and (max-width: 1920px) and (min-width: 200px){
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 980px){
     
-    body{
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-        font-size: small;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    h2, h3 {
-        font-style: normal;
-    }
-
-    p {
-        color: #8A8585;
-        font-size: x-small;
-    }
-
-    .header-section{
+    .header-class{
         width: 100vw;
-        height: 40vh;
-        top: 0;
-        left:0;
+        height: 35vh;
+        background: linear-gradient(180deg, rgba(240, 94, 43, 0.8) 44.17%, rgba(255, 255, 255, 0.12) 100%);
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
-        padding: 0px 20px;
+        padding: 20px 40px;
         box-sizing: border-box;
-        background: linear-gradient(180deg, #FF99C4 44.17%, rgba(255, 255, 255, 0.12) 100%);
     }
 
-    .main-section{
+    .logo img{
+        width: 150px;
+    }
+
+    .barra-pesquisa{
+        width: 230px;
+        height: 35px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #8D8D8D;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .pesquisa-texto{
+        width: 150px;
+        border: none;
+        outline: none;
+        background: none;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #8D8D8D;
+    }
+
+    .icone-pesquisa{
+        width: 20px;
+    }
+
+    .animation-icons{
+        height: 100px;
+        width: 475px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blue-icecream, .orange-icecream, .pink-icecream{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .blue-base{
+        position: absolute;
+        z-index: 1;
+        width: 150px;
+        height: 40px;
+        background: #516FFB;
+        border-radius: 20px;
+    }
+
+    .pink-base{
+        position: absolute;
+        z-index: 1;
+        width: 150px;
+        height: 40px;
+        background: #ED5885;
+        border-radius: 20px;
+    }
+
+    .orange-base{
+        position: absolute;
+        z-index: 1;
+        width: 150px;
+        height: 40px;
+        background: #F05E2B;
+        border-radius: 20px;
+    }
+
+    .blue, .pink, .orange{
+        z-index: 2;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .orange{
+        padding-bottom: 10px;
+    }
+
+    .products{
+        max-width: 90%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: -20px;
+    }
+
+    .grid-a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-right: 10px;
         box-sizing: border-box;
     }
 
-    .tablito,.chica-bon{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+    .tablito{
+        grid-row: 1 / 3;
+    }
+
+    .text-tablito{
+        width: 260px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: small;
+        line-height: 20px;
         text-align: center;
+        color: #8A8585;
     }
 
-    .minions, .brigadeiro, .morango, .kolorix{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .text-chicabon{
+        width: 226px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: small;
+        line-height: 20px;
+        text-align: center;
+        color: #8A8585;
     }
 
-    .tablito,.chica-bon, .minions, .brigadeiro, .morango, .kolorix{
+    .grid-b{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    .chicabon{
+        grid-row: 1 / 3;
+    }
+
+    .chicabon img{
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .chicabon, .morango, .kolorix, .minion, .brigadeiro, .tablito{
         background: #FFFEFE;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
@@ -59,45 +181,28 @@
         box-sizing: border-box;
     }
 
-    .tablito{
-        grid-area: tablito;
-    } 
-    
-    .brigadeiro{
-        grid-area: brigadeiro;
-    }
-
-    .kolorix{
-        grid-area: kolorix;
-    }
-
-    .chica-bon{
-        grid-area: chica-bon;
-    }
-
-    .morango{
-        grid-area: morango;
-    }
-
-    .minions{
-        grid-area:minions;
-    }
-
-    .footer-section{
-        width: 100vw;
-        background: rgba(244, 155, 140, 0.56);
-    }
-
-    .footer-configure{
+    .tablito, .chicabon{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-        padding: 20px;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10px;
         box-sizing: border-box;
     }
 
-    .text{
-        margin-top: 50px;
+    .morango, .kolorix, .minion, .brigadeiro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-section{
+        height: 20vh;
+        background: rgba(240, 94, 43, 0.56);
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
     }
 
     .contato{
@@ -121,118 +226,291 @@
         align-items: center;
     }
 
+    .made-by{
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .logo-img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 980px){
+
+    .header-class{
+        width: 100vw;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(240, 94, 43, 0.8) 44.17%, rgba(255, 255, 255, 0.12) 100%);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .barra-pesquisa{
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        background: #FFFFFF;
+        border: 1px solid #8D8D8D;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .barra-pesquisa-web{
+        width: 180px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #8D8D8D;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 2px;
+        border-radius: 20px;
+    }
+
+    .pesquisa-texto{
+        display: none;
+    }
+
+    .pesquisa-texto-web{
+        display: inline;
+        width: 130px;
+        border: none;
+        outline: none;
+        background: none;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 30px;
+        color: #8D8D8D;
+        padding-left: 5px;
+    }
+
+    .icone-pesquisa{
+        width: 20px;
+    }
+
+    .animation-icons{
+        position: absolute;
+        margin-top: 35px;
+        width: 80vw;
+        height: 100px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+
+    .blue-icecream, .orange-icecream, .pink-icecream{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .blue-base{
+        position: absolute;
+        z-index: 1;
+        width: 70px;
+        height: 30px;
+        background: #516FFB;
+        border-radius: 20px;
+    }
+
+    .pink-base{
+        position: absolute;
+        z-index: 1;
+        width: 70px;
+        height: 30px;
+        background: #ED5885;
+        border-radius: 20px;
+    }
+
+    .orange-base{
+        position: absolute;
+        z-index: 1;
+        width: 70px;
+        height: 30px;
+        background: #F05E2B;
+        border-radius: 20px;
+    }
+
+    .blue, .pink, .orange{
+        position: relative;
+        z-index: 2;
+        width: 50px;
+    }
+
+    .orange{
+        padding-bottom: 10px;
+    }
+
+    .products{
+        max-width: 90%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: -20px;
+    }
+
+    .grid-a{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .tablito{
+        grid-row: 1 / 3;
+    }
+
+    .text-tablito{
+        width: 260px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: small;
+        line-height: 20px;
+        text-align: center;
+        color: #8A8585;
+    }
+
+    .text-chicabon{
+        width: 226px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: small;
+        line-height: 20px;
+        text-align: center;
+        color: #8A8585;
+    }
+
+    .grid-b{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .chicabon{
+        grid-row: 1 / 3;
+        grid-column: 2;
+    }
+
+    .chicabon, .morango, .kolorix, .minion, .brigadeiro, .tablito{
+        background: #FFFEFE;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .tablito, .chicabon{
+        width: 165px;
+        height: 217px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .tablito img, .chicabon img{
+        width: 120px;
+    }
+
+    .text-chicabon, .text-tablito{
+        width: 120px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .texto-maior{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .morango, .kolorix, .minion, .brigadeiro{
+        width: 100px;
+        height: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .morango img, .kolorix img, .minion img, .brigadeiro img{
+        width: 80px;
+    }
+
+    .footer-section{
+        height: 200px;
+        background: rgba(240, 94, 43, 0.56);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .contato{
+        list-style:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contato-items{
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        font-size: small;
+    }
+
+    .contact-text{
+        margin-left: 5px;
+    }
+
+    .contact-icons{
+        display: flex;
+        align-items: center;
+    }
+
     .footer-logo{
-        width: 70%;
+        display: none;
     }
 
-    /* Mobile Adjusts */
-    @media only screen and (max-width: 560px){
-        body{
-            font-size: small;
-        }
-
-        .header-section{
-            height: 25vh;
-        }
-
-        .header-logo{
-            height: 45px;
-        }
-        
-        .search-icon-div{
-            width:30px;
-            height: 30px;
-            margin-top: 30px;
-            background: #FFFFFF;
-            border: 1px solid #8D8D8D;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 20px;
-            box-sizing: border-box;
-        }
-    
-        .search-icon{
-            width:18px;
-            height:18px;
-            padding: 5px;
-        }
-        
-        .products{
-            width: 85%;
-            display: grid;
-            gap: 20px;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas: 
-                'tablito brigadeiro'
-                'tablito kolorix'
-                'morango chica-bon'
-                'minions chica-bon'
-            ;
-            box-sizing: border-box;
-            justify-content: center;
-        }
-
-        .footer-logo{
-            display: none;
-        }
-
-        .footer-configure{
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .contato-items{
-            display: flex;
-        }
-
-    }
-
-    /* Web Adjusts */
-    @media only screen and (min-width: 560px){
-        
-        .header-section{
-            height: 30vh;
-            padding: 10px 50px;
-            box-sizing: border-box;
-        }
-
-        .header-logo{
-            height: 70px;
-        }
-        
-        .search-icon-div{
-            width:40px;
-            height: 40px;
-            margin-top: 30px;
-            background: #FFFFFF;
-            border: 1px solid #8D8D8D;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 20px;
-            box-sizing: border-box;
-        }
-    
-        .search-icon{
-            width:25px;
-            height:25px;
-            padding: 5px;
-        }
-
-        .products{
-            width: 70%;
-            display: grid;
-            gap: 30px;
-            grid-template-rows: auto auto;
-            grid-template-columns: auto 18% auto 18%;
-            grid-template-areas: 
-                'tablito brigadeiro chica-bon morango'
-                'tablito kolorix chica-bon minions'
-            ;
-            box-sizing: border-box;
-            justify-content: center;
-        }
-
+    .made-by{
+        padding-top: 10px ;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        box-sizing: border-box;
+        font-size: small;
     }
 
 }
